@@ -1,0 +1,2604 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title></title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa bdd-report dark">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary"></span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">02/18/2026 12:06:01</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>  <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GestaoTokens</p>
+            <p class="text-sm">
+              <span>12:06:01</span> / <span>723212.96 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">GestaoTokens</h5>
+                  <span class='badge badge-success'>02/18/2026 12:06:01</span>
+                  <span class='badge badge-danger'>02/18/2026 12:18:04</span>
+                  <span class='badge badge-default'>723212.96 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+  <div class="accordion mt-4">
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 01- Validar mensagem de erro de Margem_ADC maior que Margem no Subgrupo</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão subgrupo 'CONFIGURAR SUBGRUPO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do subgrupo '2'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When altero a margem para ser menor que margem_adc Subgrupo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem da margem 'Margem Adc deve ser menor que Margem'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>Scenario: 02- Validar mensagem de erro de Margem_ADC maior que Margem no Produto por Estado</div>
+          </div>
+        </div>
+            <div class="">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão Produto por Estado 'CONFIGURAR PRODUTO/ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do Desconto Produto Estado '209'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When altero a margem para ser menor que margem_adc Produto por Estado</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step fail-bg" title="">
+                    <span>Then valido a seguinte mensagem da margem ' Produto Estado: campo Margem Adicional deve ser menor que Margem'</span>
+                    
+    <div>
+INCONCLUSIVO - o elemento não foi encontrado
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB38AAAPgCAIAAAC9PCHMAAAQAElEQVR4nOzdCVwU1QMH8KdcK6AgHmAeoKbg3xK8EjUFUxHzQvMg80DNQrOE1EJNw8rEo8QuybJIS9E80CzxBk88UvBI8ATxWDxwUYEFPP6/3dFt43KBBRb8fevjZ5idnZ19M7vz3m/evjE27j5WEBERERERERERERE9jXLzYt0XNhZERERERERERERERPrG9JmIiIiIiIiIiIiI9I/pMxERERERERERERHpH9NnIiIiIiIiIiIiItI/ps9EREREREREREREpH+VBRERERERERERERFRUS1cuDDP+UyfiYiIiIiIiIiIiKiIpOg5zwCa6TMRERERERERERERFYV26Jw7gGb6TERERERERERERESFljtuzjGH6TMRERERERERERERFU5+Yz1rzzcWRERERERERERERESF4e/v/9RlmD4TERERERERERERkf4xfSYiIiIiIiIiIiIi/WP6TERERERERERERET6x/SZiIiIiIiIiIiIiPSP6TMRERERERERERER6R/TZyIiIiIiIiIiIiLSP6bPRERERERERERERFRo9+/f37dv34ULF+7evVu1atVGjRp17NjR2PjfzJnpMxEREREREREREREVzvXr1zdv3pySkiL9qVAojh49mpCQ0LNnz9q1a0szKwsiIiIiIiIiIiIiosI4f/68JnrWwBzM1/zJ9JmIiIiIiIiIiIiICic+Pj7P+YmJiZrpEh95w61FU6EPUcfPCCIiIiIiIiIiInpW1bSybG7/nObPU4lXb6be032mIL26fft2nvNv3bqlmS7x9Hn7gslCH0w83hJERERERERERET0rHJ3dlr50b8hofdn36/d/bfuM4UB6P9yq09HeTnWt9Nx+dOXrn2w5PeIQydF+ZGVlaWZLvH0udvkBYKIiIiIiIiIiIjombdowut1bKx0X75ZgzqL3nnd8dB0UT6VePrMETOIiIiIiIiIiIgkNlUtNgf5t2rS4GbqvTqD3hdFsmL6W4Pc2mDC5a3AUwlXC/Xc9wd6TB7c4/3Fq8J2HRJU6qToWfdhHrK3LmlUp5Yot3jXQSIiIiIiIiIiolKScjdt6V+7RfHMC9ssiqp1U/ta1lUHu7cVJaymleX3/iOUESHj+3YR9Kwq8b7PREREREREREREZCA+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gncdJCIiIiIiIiIiIiL9K/H02a1FU6EPhjlQCxEREREREREREZGOrtxU1K1pLfVo1lGC/JYot0o8fd6+YLLQB4PqXk5ERERERERERERUWP7fhX02un/TerY6Ln/8wuXpP60T5VaJj/vMvs9ERERERERERERUfBX1roPli2GN+8zUmIiIiIiIiIiIiIoPCXLusFH3mVT6eNdBIiIiIiIiIiIiItI/ps9EREREREREREREpH9Mn4mIiIiIiIiIiIhI/5g+ExEREREREREREZH+MX0mIiIiIiIiIiIiIv1j+kxERERERERERERE+sf0mYiIiIiIiIiIiIj0j+kzEREREREREREREekf02ciIiIiIiIiIiIi0j+mz0RERERERERERESkf0yfiYiIiIiIiIiIiEj/mD4TERERERERERERkf4xfSYiIiIiIiIiIiIi/WP6TERERERERERERET6x/SZiIiIiIiIiIiIiPSP6TMRERERERERERER6R/TZyIiIiIiIiIiIiLSP6bPRERERERERERERKR/TJ+JiIiIiIiIiIiISP+YPhMRERERERERERGR/jF9JiIiIiIiIiIiIiL9M/7n2ynp6elKpTIzM/P+/fsP1QQRERERERERERERPdsqqxkbG5uZmclkMnNz80I9XfW0R48eVapUycTEBOnzoyfwmPQvERERERERERERUWliMll8iHxFUUnPrfSEsRrSZ4TJhVqPsfQEBNgP1HJ0fOZuJiIiIiIiIiIiopKmySEZSOqXJoPWPYzOsSSiYyM1U1PTQqfPeA6eL3V8lqLnHDuY+5uIiIiIiIiIiIhKjvZgDAwniylHdix1XtaeKOzThTqANn5CFIYxcmfk1lL6LPLawUREREREREREREQl5JGWhw8fckxgfdGEzsiOK2kp7EqkpyB3lsaALtTTVXG1tF+l3Fp75A3uYyIiIiIiIqIScjddGXs+KT5JfvPOPUEGqWY1S8f6ds6N61c1l+W5AHeiwXrqvjuTJN9/6uzN1HvKrGxBpUVmalLTyrJD8yZN69tpZmqHzlsOn/pmw874y8l30pSC9KGahcyxnu2Efq/0aNtcO4Z+6hO1l5ESZ83TRWH8mz5Lf7PvMxEREREREVFJQ2r5686DrZ63H+j+Ui3rqoIM0g3F3bhL17CnRnt2yh1icicasoL33enEq5sPn3Rr0dTB1sayikxQabmXoUxITkHhGxkbN7N/Tmj1ekY4+cf+YyMX/PJ40UJ2sKX83MnIOnw2CQX7y5SRfTq01O4EreMatBcuSvpsZGSEvSsF2OzWTkRERERERFQKTly80taxUWdnR0EGrE7N6vgfyQn2V+6dxZ1oyAred9GnL3i0bt7Mvo6g0mVd1dKlqqWZiQl2wYuNG4j/dnxetH6XqMTQuaSgePt2bIUPhe7dnyWa4TukP/F07cEznspYPOk7rcH0mYiIiIiIiKhExV2+PrBza6QAggzeC43qr9n9d5dW/8sxnzvR8OW3727eSWvawI77rqw0eq7W1mNxUvlromf8e/baLVHIfrWkOxQvClkaPaNQXZgrFW+nGEvP106cK3E3ExEREREREZWkm3fu1a5eTVB5gD2F/ZU7LeFONHz57bus+w/MTEwElRGLKjLsAu1MEv/ev3//bgbHei5BKF4UsqmpqfRn0RLgIjzLOL9nsgc0ERERERERERERlQJGkaWgsIWslz7KxiW6diIiIiIiIiLKrVBjblKZy3N/cSeWC9x3hkmzCzQTCEa5U0qalD4X9q6DxcSRvImIiIiIiIiIiKi0sb9zGSq1wtdf+qyIDnCppM3awcXdyycgNDKh3IzZokyICAkKDotRiCJRRPg6VMpBpioGn6AIPReCItLXSbV6J79oXVesiAkLDgop6t5ICPOyrpQfJ79InYpM///O1gAAEABJREFUGRceHBQcHle0TZCHedupStQ1OI6jABERERERERERVQiaoZ8FlbAyKeoS7PucmhgbteGXuaO6NHTxCSsXeaEyLizQb2pgaFHT57xkqorhl6k93X1CyzaFl0cG+/lPDQ4vw61QRIcE+E8NCo/TY/kSERERERFVcEs37wndsk9QuZWVfb/b5AX4HxOCiPTEyqIK/hdk8IyFvpn1WBwX7usgU8rjYiJDAnwXRaXG/+LjY+cQEeRqLQyZMiE6IiZTyERx2Q5ZHxPmZYc1ymMiw0MCA74/mJq4KjjEzzvItfhrLxpFTERkshDF3gP2b++KCXEv0moUcRGR8SgdQURERERERDpTZt0v3OCcKcfGjFu87PZ/Z9p23r54WLvkza9NO2D/3qTvOlqp56ZuWfTFO+dd1nw+wCXrv8+yqOHRoevMMd3a2Uh/ZyfsWzfpp8NRSXdSTao4N3bs3NtzpkcjdeMwOyZszss/Xc588lQzixpu7p4zh7u1s7z5y7SZbx7PGbnadhh7JLAtGs3yfUu6fX7KasDEP8c0etLOzH9tNnm8V8X5/Z8sjlh9Wp6cbWxfv5Fbh65Thrd0MlU9JD8dNW/V/t2nk2JvC/v69du16fDekA7YpCXTvljSeOz2cY7/tmzvxb8/8Yf4XhPXDqiv90b7g4cPh3z6feL1W5jGxJrAcUaVdegImJU0771FWzwm/TmgjkzaoZad9y4a1s7yyQLyw2+M+2GDbf8jX/V0Mr35y2Ttcq7i3KbtlDEDhjQ2l/7OVUpuU4a0dVKvShH768tTdsdrXtekmrMznttnSGMT7Ii2P13OuWG27bcvHuVmKZSXot6Ysupg/QHbP+8mFXiBazPP4z3eu7Bk8aqv9ifFp923sq3n1qLte8O7udmZCFWacnLJ8h2rjl+ITc6Q2dZr5/TCCG/PIY3FwaUL3ohtu2ZBTxdTzVpSN8wOmpTdZ3tgBwehRym/zVq4uPbITeOe105AlJf3Df1o/4tTJ8xyrKI4ubrbR/szXx6zffKLmqRDcXRFp08OmfWZsHfM87LbJ8b5L12h6YBnYdO1ndvU4W5tq0t/Z+xZuvCNnfcHTPILblXt39f96PPxJ//9yFjVtu/Vp09gj+dtTf+7gTlWrvbymClr+9gcXrxwvKLb9qkv2eZ+F7dPjJqwdF1ajjdr3HXMlBV9TNY+5aWzEw9umrrs6N4rd/El8GLD51/27BrwioO0ZuX10z+FRa09mXjieoasdt02TZ3eeK3baw1LNhpeN+sd/Nt18gJReGaNuv75+QDn5O29pq0/9LhAqrw0evI+7/qPl8hKTTh/6qul65Ycv6P+OqrWd3LAt9UjugXujs9W/W3r1Hn2OM9+jWtam2bLLyUdPBL16fIDsViVRdMvFoxtd/i7rj9dVD+xinP3AV8McWnXwEqWlZ6QdCFqa8Snm84kZmtesdqG+V+8sU0ufenZu43bPvzOO1N+2/r429jYsfvY7RMdFVt/6PbVqWRpnondu5/P+NLZRPN2lPKkLZF/TF8eI22boSm5vs8yOydX7+CIyMU9cE7LPBgcEPqk/7NSHhns7epkJ1MNo2Dn5Omn3TMaD4b4ebk6WMvUD6oGrfhPv2k87OMuPdfawdX7v0NaKBPCg/Bc9aOqkT88/bT6MT8euMHaKzQmOizAGy+BF3D1CYlWLaGI9HOq0mxcVKbq5DuqYaVKrkExyicb++QFK1mrNigkUi50JLNz8fQNCvS2V/2REBcnF8oYaXwSJ7/wiGBvJ2uZk2+EtIWK6FBfvI56eAt12eV8axEBnqrNkOFdB+QYHET5eNQTB5/HK8OcIPUcO58IuUgI9bSu3vP7RMyPX9SleiU773DpLSjiwvw8XRysnwwR4hUQXsxO6vLoUL8n+9ba6d8tlYf72FVvPzcWk8m/9K9TydpT6gqujItA8bo83p8o3GitwlVi89ydrFVrcvcOymvTirV3iIiIiIiIKirTaiM+np+9dcm//y8fhsRQ1rjbF2Psdv+0aoNcFVHI962bfqTaBxP7uFjmeFbw2UBPu7g/xiw+rG5iZcdt+u7lz2Nk3d/YHhZ8Y3nAFx7Guxct6LX45JMGmIm1U//Dm6TX+vbcIp9+yRFjvtqfIGqOXPCdeub8XztUc+z+3g31xlxWR88i6+aWbbfaDe9gF7s/NkV76/NZW1bOd6k4vfm1yb/urt75t8Xzb4RN/bZ/jYRNPwycr97mexe+WrBuq0mHb+fPubFuzvbJblZHVr3xVYzctKaHR33F/qiDWq8oj92/9V79ER3s9B49P3r0aOTcpY3q1PQf6PH+wB6YwJ+iCEyr2Kac+eV06pO/sxOO7D8ojK01iaSpuXOvSeri/fbGj2NHmJ565/N1UfdUjyhOr/u3lNbN2eTbXBn5c7dpmw/ee/xUWfWmPy77VjpO7i6fOLtx0vTPV21JMXHxnintghO+Te0bdd27TjqQVNGz6pA4EqPo0GewiNl4Pl17S/NZW653lBI/bfKCaeftpgTOSFr3+Xbfttbn/+g1fVWUasnUqOW/zTtf44NpMy6vCz45e0i/7MPvBOIhc2f3DvbJB1af/vcVlfJTy+KER/fmDqIMyCyqKM8c2ntdE/jd2bvznNLC+N8DybTq0KmfpIYHp4bPOT61q218xLilRx8HiLfPrY238R9Q9+zOc8naK0Ww22NCouopwamr5+yZ1FFE/DJuy5U80pp/V/74/z/71H3KMVz9xZ9/Uy/829uj6lYd8N5M9RMXrOtjK3vKS2efiVjabcEJs1cGb/p5TuISvzmvGO9d/M1rS08nS2887PeFF238J00589ucwzP7984+5j9n/Z7bokRdV9xJvn1HFEWVdu4usuPbNwjHIc2qaT+gOL+9Y/+3THpNfmEyDsJq702b9K1bDbNcz7dt0X/T50PcUnaPmTy13pgFk7bdsvcYtmlye0eTnC/00pDx2ye6KPev6jpmsmrJyOx2YyZumtjG/smSinsmbkP69LPNp3+wiZ2He82Dmw4nN2vr9p9l0hO2flfP4y0T/N9/8stf7Rfubywd3tBKGKKSvuugzMU7wMcRE5nR4dKQw/JwP/cu/qsOxguXfkN6OCjityzy8Q6IfBLBBnp5jlu04WCi0tre3loRrxq0wtUzWEqChTzCz7PLuF+i4pMzrWzNUhMPrsKj3iHSo4qYYC+X/lPxXDxqr3o4dsuiUa7umjGJZerPoDIu1Nfr9eCIBEWqyEw++Ms4bz8EtDJrJ5d29tLhZGbv3M7NRXX1Bsv6uHbxf/yCtlapydigcV3cfcIThM6U8HgDVP9Yq/+VRwb5+K+KT818/MbCfV3bj/oer5NqZmtvlZkcL721J4k9ysXba+4WbIbIVCREBL/u6VeITVCF2Y6Pjz8rR+d2ri6qjVBEBni6vL5oS2yi6jVtVSOlbJjbX1XYRR0YQxkT7O05ahH2rQJ7z17gTcx93dVTtXNVm+D8+FqgqnxVAbVMdSx49UTxxibL7O2tUhNRuO09n+wv7Gyv1xdFxePkqlTERUzt7xUY+Z8vZL3sHSIiIiIiomeJiZPH4NlOl6eH7I+7dHj6T2cch78xorFJrsXMHZzdZgxppIw7GY80UB7z6aqkduPeW+rd0sXG3NqmjlvvtzZNc0netPqr0+m5X8KugaOHh50yKT4xq6BNUSbFrE6pP8K9c1+bC8uO38xvg/NdW9bNDct3JDoPWzOlm1sDK2ub+j16j/pz0dgZHauJLFW/xcQscwRM7fCQpZVDsw5fLvpk+2QXO2Hi0Kazmziz7IjmFW9GbTslWnSWet3q1607ad1bN/9i3JBHj0SlSgITr7g0S7mbVugVmVo5NxaHtl54HPdn3dy6/5Z9M7u8fphsYt3ghbdGd3W+d+FgUrrIurZ66f7kNqM2TVeXkqWVU9ueS2cPaZccMW1rUu5AU2ZT3627i/29pNjk9IK2596F1fuze3h0GNFBbNl6Ib8UIf+1ZcdsXbcsre1vn48a6VzHzrKmS8eeSxdM/W1Ic1V2kZUtT862c27r1qymtaU5DoC3pgUcWTTEzUbI6ruMaJy+8d9XzE7Yvz/WtPlI5zLJ3EzMrOu2tbiy9mjK45K8fm7txSpt61Yzy2PhKvYvdAx4zT7zTNwZVSabnXjs0InaLw3o9FKT64e2X86nw6ppFXtHp9ccTc6eTE4VpSvHS18/MWfdlbZj3l782ostqlexrm7byXPk2skvXo9Y/118hsi6n3w92/aFVi872lhbVLGt9/zoSX575vbvVF0YqOqNhjibHNy6e1ms6OzeyDb3Rz/7TnxczA9ffTdw1S03b0+3HG/EpN7g4W52p9cN/DxiY9yt5KSLq1f90G3az58cyRmFm9VvO7O/Xezy79746cihpDvJyZc3rvph4KKT1u59PnCWUu9sxemoJckNZwx/wTavbyCrxm372SQt+zNqQ0r9wS1qmuX5dtLuxMbGrI7Ltm9cvwS+xvSgpNNnpK1Ork6q2DFTHiNXIkYNDvw+HqXX4+fIyPCwiOiID51FZmxIoDpnVcSEhR/MFGZui08r5AkJcsW1zR8O6efpJBTq/snRwQGLVL1nnSfuuqaQKy5unugsRPKGwMDwBKUyLjwgcAs+Ebb9Fh+7rcBzL64caS9U6w54HE9LF4Ay42NkfgfkCrn82EJVt2yRGBEaLZe5+IaFBbqr/rZyDwyPjgzxdpDJIwIDVyVijtucXbfxBPk1vCJ2dPwvAcGROka08sjgoDBVaGrm5O5kp47AVYdKamyc04ebT99+lBDiaa2IDApQFQre2Ga8sQTF7QNz3KyktxYhl1YShnIRZu3mHMCGKOQHAu0UmUJXdp7BYSHqawDC0SckMjo8wN1aGRMSEKxap/3IlRfxmnLFscX9bFVXGAMDijhKtzIuIiwKe8B5zjHV3ktQXNu1cGQ/LydrhUJp7RoQFhrQTvXWbb2DsduDPe2wy0JC49Xv6phqbx+bo3o8NkzdfVmJjD1MVSa2PRZjdapDwUf2n/BZH3uHiIiIiIjIUKUrs+KSHoeNldVDb+DPjMwsUVw1+40Z7CFf13vKrwcbDZjtXie/zpIyUxMhDWERd/hgVqMRHf6zpJ1zBw+b1NjTqXm0H+8lRaFdZ9so51gB/5EeG3lY6dzW2a5OD3e7uMhTCfm9s/zWlnJm43nh1r25g9Z8WYOWQ9wd7TDHpv7gNiZbQkKnbT0WdTpJniVkljUdLNXBjI3jiA7mB7fGxKlfUXnp1LLT5h69He2E/tW0shzp0UGafqi+zdfoni/bVLUQhWbs2KGp1YUDUepO6wjuVyXX6NG4gMjVRNXpTNU1+MyGJJPOHs21352sgcvgZiaJx+V5NZ1TY/fHJJraOVY3L2Br5Kf3R5m69G1s5dSmrfX5/VEp+S2Yz9qybu7eL7du0+E/o6lY1u/ngcsbqqi9nUcj5dbf3gnbvyX2QlxKNuY42KjXYFqzR8VOP+AAABAASURBVK+m4vjuKOmTcU++MVJu393N2VKUBeyLqt1a2pzZG3dJdSxlJ548dLb68y/XzneQW5mJiZDCwazrO/akvNjpefvaz7/WMGPtwev55TDKy+c2xWc0aGpT+vm69ksnxx87kuUwtJ2t9peA7Qsvda1+98SZO0rTqm1fcVDuXO2/9tD2kwlnbmOXVbOvbrAjMhvbt+jwUlb8qtO3DkbGpDZu38Muv112Py72VHL1pv0a/6d/tJldo36Ns/HcOK2rBqlxR37489R/B74wdnBycRZJy/YnaV08uB9//EBUCq4nSV2qcUDcWr18R3KLPjOdq+XagGrtPF6wOn34YJJ8a+RNe/fmTvmEy1b1m/Z1MpcnyeUGOfKG/sd9zs1a6u6rQAipTIiOjMO0lau3q4NqrrWrl6fzXET0EZFyX6fHV+0yo4IDAq39fDxdnTyDwjwfr+bJc83aefu4qr43HTyDwo95JSiEtYO1TB4eHq3al45eft4uqvXIHLx8fZ1/mRqbiXUn+Lk4PdkcW09fH/UI1C5e3u6BWzakKhLikIvn/oWNPCY8OvHxE9QjHcvs3H193UPGbcmMj4yIU7jnN4518qr+dVb9d5Ztj6AQXxeZ0HydOPoEBnhKb/jxeMjCrAfWbieVio+vZ3DUquTE6PAYuZdrQnSMakPM3H281O/N2sXb1z3o4JaiX/lSJkSqxrhGVOzr66XeEzIXbz+v4A3fx6dGR8RgXzjk/cTE77tU//6/s6z6rYwJ91Ytr07WM2ODAwLsAnyx99z9Qt1FvlSjjih9//3b2gEbcjBTFTWjmOIi41Rvz9bd18tFtX2qsm8X4n/wSehe5L1DRERERERUHjwSj0bP+2naG72kPzfujwla+df2+ZN1enLWnWWzpizTmuE8JGDvmEaP2702jfo1M//6z/TBHRs65BcQp8QvWxcvazTM0SZbeS9dWNpZ51gSgaCFiL0tjRKbrYhb37b3+ieP1fDo32fN8A5OBaTPKRdWxZr0m6ge7rlFB+d1ERuTOrz3uBe2TmtTZqUrhLmjTX49/Wr2mxhgt2nVJ+vWr06SJ2ZXce7gNmO0Z78GCDHN23m0t5+2f2OSm1NjEbd/f7yty+xmBYWthsCucQeH6j+sPnKzX++asYjMnLq51T+8LDavRbNublm/I9ay6Qf1zUUySqmKW85SMrGrbqJMwgUOVT895e0zb454583HDxk7d+j2xew+/QoK429GbU2y6+CJg0fWoPlgmyjVVnnUlB7TaW1ZGbgeYFvfPJ8rHyZOHmO3V98+fdX26evlOMbsndq8N3zAW21rylSXPdw8TH9YduRaj951lOf3r75t924JDJmiK1OTBu1eevHgvj8vdmjaMAWBcpOXPRucOZ33wrfPrfjjnFnDQU2rC0X80bVp9gEvqNLGF195PnPpoROe/dtKVyWyM05s+cZ+y5NnWduP8h7zk6dDHu8x6+6KOTNX/Pt3laFTpy5uV4y+r/m+dHZyWoawqG2V4xNtUs3eQpxQfQmYNH1lxJ/WUYHrogL/SD6huN+gactx3n1Gt7LR765paFdzsd9wE2Mj6c9m9nXw744Fj78Vs7Lvj1/060X5zaesxaSmh3u91P2bY9NEJi7kpLQf3MZuVdLlvDt5Zqu+Z6z+e8FIZmEuy0pPvp391H6hMksTWdYtxb3/jn1/LzU5TThXN9EUDo7kaZFtfxvu2fn8ukStBc1sm45olr118YVkcV9x/HD8gG6DG++PjctQP2ju4DH+sodmnUmrVv0wcN2Z0u4jr5tSSJ+VCoU6c7W2s5YpFQnqPrupW0Y1qzJKa6HUhLgEpXB39QsYEj5qVWL8hrmvb5irGieiBzLkAF8vJwS3j58rs3OwfryDZA4u7g7Si8TI5aoSNrNz0nzrYEEHKxGbmilPUGhdRLJzePKZVW0RXjpTqcjrGpNSKZeuAyIVfRJkyqwdVD9sSRZSQqobe7eJQSFB3k7aHzkrBxfNNwdeR33Rzs7OQbPt0msmC0Sxqj7hjzdE885l0uPFSJ/lCerhzK0cHLTKy8lalR5je1RjhRT6GwL5daBPaM/vY5O3LBq1ZZFq77l5evkGBEiXA/KgiAkLCgoJj4xWDSmitXFK9VHz+D0/2T6Z6u2Lg8lPltHT3iEiIiIiIjJIFjKzDZ++22XS/Pq1VR1Ek66nRH75gbnMVKcnq0ZwnrG0Y97dJeWH1007UmNKf7uNy9dtcBrVT/NTbe3M2qJG5w59lo5R3xuwurm4d0t+TwjtHqZZqQnZJtaPxyFVjdS8SX0vOMXpdb0CYxzbNHcpsDuq/Pju1XFnkse9M+nJHOetSSPGSfce1GltMlMra+TU9wro6WferveoP3urplS33Vu0asysbLtFQ9pZqgZwGFJ/x5KtF94abrI68pZj7/ZOupVrWTKt0dfDbsnWmLg2jTbEZnce3tT29uF/H81Kj/3zi1p/Sn9UcW7R9otpA1T3Brxnbi0yElKyxX/GV8lW3M6WVX98NKlGal40cSQOg5ST46f8EO/k0qNBQQmm8lLMsv2Xt0Z9XPWrx3PMUmLi3B/fe1CntZlWcbAUW5ML2Hcmdm17Lm3bUzWZcmHJ4tBpn/8gFkxWXZ+wbDSiQ7WBKAd38+StMcrGAwre2pJmVtvpNcftC/cmDjVN2HS9ripvPaP1sHZAbGHzcjvPxcNb2YqMPTuP7T2T0vuN/U+Wq/pbfNe20r0HVYMvS/cJzD7zx/ev/VG1Wyt72zxfWzXu85TF7XJ0mM0QRZbvS5vIqlcRaSnXVbfU01o++05ilrHV477eJratui1u1U01eTvhp6UrAr/4RXw2YXxDPe+dR+rfEOTpYf4PabNq7DKybZ12HWfeG/d4jtKmrfPWy4fyGhFHZmFna5qeeDtbCK1b/KWlK4W5rcXT3xq+oJSm1WwtjcVtrQDa1MrWQqQmp2tFVxmH1q/b2Nbn8/4x7yRpZho7tOnQo3Ej6wWLPngyK86j0Vdx0r0H0xO2/vbygphk1dDSE//slbp1f3yiQXZ8FqWRPisSIuPUI0+os9UndySw7/G2l4v1vwGntYO7Ko2VOfiERjt5BoeER0dHRsWnpsZv+cV/S2T0yshQ74K7skojWuS86pBnBmmtFawWELEW/fqM7ZD1MWFeBf5oR2Ytk8kKeCVljk2X5V7gKZ4y9kRR353927tiQtzz2Rd2niGRx9xDQsIioqOjYpNT46NWzY2KiFFEhvu65H5Bebif9+u/xAszxyEfBnq7Oygjg3zmRuk4oEiZXdgkIiIiIiIqLbWsq26d977rO7ONjCrv+2pqTSt9jC+QcuyTkFMOw9+b6W7SLuWL6SGHnad1eNwDOp/M2rqxi7NYtfrItX69/x18Qx67f3dKtbea1czROrNu1nVmm8Njlu8Y0WxAvgF01rUtW5Oc35u19skKFbG/9locFZvSyM1G57XZ1OtRP33en6cSnDtoenArLx3+alu2x5AOTvfit8SJdh3Uo3Co3kKHmeOSdgcmxaVkt7M0EaZ1PHo3+mr5/i3NTLamNZrSpmZJtzGNjSobVS7m2Kcmdm06tFu1fVmk/KBw/LKZudiv9aDqroNjt090zNFcl9k06mGb/tXWU/K2bTUphSo+Pp3tOLyedY5wwcbxgyGO3ZauW9Vh4sh8I93suP2Hk9uOTQp8ssKUY2OmRGw838EpR//xAtZmauXcrEbC/qiolEY9NHtc1XnzpKx7t342N6OOXJa1aPt4XA6bRm+NGxwzMfSgPF2oBhsxcerewTFy/+pYq+TjJp3fa1oSQ6YUgmmVl19+fuHyQ2uzklMdPV+2Fkf+82heAfHt0ytOVg2cO8XfURqbIvv42m/G7zyX3KrVf1Nmk6av9B6w8/ugtedeHtesdH/fnfOlrRq++KJYv/Zoci/PfwffSD55aK+i2mhHG1la8p6jV2QvtGorjY9c3WH0mP7HP1xx+HqG0Gv6fFF+s+fUYM2fKz96C4Hz0NlLCrEKXJtxb2sb++sLgbulUTLM6rf/7eNuQxpHHDqea1mTam69XRxSzkxPytBOnzNTkrYkm7zn0dx5/+7YJ4GvVaP2Mz1MVq3afejfQYTuy8+fijftM6RD/dWrLj7pQWrs2Ka9m+Wt1edv/ScBu31m3vJT2337jIjMFtI6Lez6utvFL53TddVFaUnbDj7bR3doZxu/8T9j3WQc2vrH6u5jZwx5IWpRjGEG0CU97rMyLjw4XD2shKuXp4NMZu2g6l4rzBy8/IK0Bfg++RWBzM7VJyg0PDJOkXHtwMq3VUMBJ4aHhCcoZXZODqrnKv/tyiyPDA0KCAgIDo970gU2U64aRePxa8sT1P2hrRxc7Ar5KZU6azs4qb/DVINIP5mvSEhQqLe/0KvMn/XjNybH9mq2/fFr4iFr1S0RpSE6NO9cqZrUWgXCbHXRaHpxKxTyAuNnmZ2Lg6pCkZrwb79wpTxO3blc9ZpFPvFau3gHhIRHxsgzbh9b/6GbaiTpLSFhMXmE5fKYcPWAI/bewcFBvl6e7i7aZwxrOzup8OVPygS7U/s9l9beISIiIiIiKmX3MjKDVm6Wpp+rYR397XREz5iQ5swN25ym1P1GQP+VdXPV4tW76/dRDfdsWrPfmAHtkv6YHnmt4P5NMrvm73Ww2vLVF2PCjsWkpCtSrkVt+rn350eUbXr2rZ87WrJyG97HLTlqel43tZMok2KWJdXo1+LfzNe6cdt24syy46mFWJtpnb79m4v9ob0/37zlfKpSZMtjN78x/edlchPVICFpSUsW//DOuni5lATdu7Zl0yl59UZOT8agcGjRubM481XYKdGifY8SuFGX9k6EYd1c8b/mzyLtRBOZTdPBThmr15+y7tDB2VK3bTa16zuguYj6uffs7VGXUhX3UuMObx4z/bctlm0/6JB7yG8TB/c+H9RP+vSnmPyH4b6wLPKOo3vDf1vwNo36NspYnce9BwtYm7lzdze3lANvTFnyS+w1RRZa/CenBS54Z/8tmep9ZWwJ+3XM4qiYFClIS43Zv3t3lp1b/cfptqyBy4jGGRuXRxys3nxkszK536A2E2vHl142Ob3w4P2XX3Gwfnon+uzEg4cOWzzftZ5mWGSTpq1etDqzP497D1o4jB/+onLvpp/ji9GjuWj++9Ky2k7j2lXdHvLNuLUnjt/OUNxO3hOx4rUFxzJbdu1VV7XLtq/7fdzSfcdvS2/hzvGD+/dm2Xaqa3hDP1d3HNGmSnzkmYQnhZ0pP7MxqYqHh+N/on+TKo4t2s+eNnGpu8mW5RFRt/+7krSkjZviRdthawL7D3ayszIxtu/Qf+3nwwbbitR7/1kwMynmq/3pbmPG/+bbpnP9ara29foOGbVmYktxOmrJ6Zz7NPlwxKfHq43o3cha/eG2atxhsO2dDYeTNN8UyacPHxQNR+S+9+DteCTXokOf9/IYOdoglGD6rEC8GOTlPmqDquezs2+AaujsBR3bAAAQAElEQVQJmYOru5NQjewcEhKpjhXlEUHeXl4+AaExCkSu4X6eLg4OnsHqtBI5tKePu2a8ZjzX00XVv/lgWGjk43vxBfhOnTs3JBx/2bl4uasOlHik3epnq3LvENUISFauXq66XQmTeiMrnwS31i6e7qpb9SVHBIdGq2YpEyJDQlSdc83wYk56uzIqc3CXCiUyRH3DPXWqHhyuKjZHT9VAzzIHFxd79QKh4THqDYlDEWidlGXSGCIiOQaxr1DdnzE0KDwxx3uTBt9+PCYFytbLRfUVHYtXSlDNUo2Cob5OYKtzeeWg2pWuTg7uAep7/slQfD5eTlqfCJnUYVn5eFwMmab/slJ6drC6bEWm+lFrB3cn1fYlR4RI+xPvKeyg1rm5tPYOERERERFRKUu+fWf93r81fyJ31kTPsHb331jgKatQj6Fh4vGW1v+ffHU+PS7yt0/j6s/wbfu4s7Bd29nDG8YuX73sUsH95azcxk36873m8vWL23r71fL+uNvSi87D39s+pW2ew0bL7NrOGFI/dtUfG/K+AVb6wa0HEm3bemhnvpb1hzibRG3NI/QsYG12HUdtn93fWR7Re9yUqh7v1J+yQ9lh1Cb1Vskauy2d5ml7fFW3IePx9muO+2GjZde1n/dpp+lAbdNoZBuTQxdMPHo7lkT3pRw70UJmprqL4xM67cQ8WLVT3T/Qrl8hRjpGBIxS6uOY9Ee3N6fUGjDlxekR8haDd8wfkqOb+WOm9QePcbONXTcvNu+xPuWxUVvT6g9uUfM/W+VeT3kkr3sP5r82WQO3pYvGvmV78Z0pH9fq/VbVEd9tNHVbO3+Iqiu0ZaOZgT4jxOF3Jk629HjLsn/QpFi72Z+PfevfDtQ13bo3VF64aeveoQTvNygNguzlZyX9P+ib3y7n8zGxqPtaOxtZdafXGuoQtmZd/3PnFdsXXmyqNYSFrG6zXtbJK/K696DtC55TX7jz3fJDZ4p2w1Hd38VTXrpapzET1vo2u/7H0k6jptqPmtN7ecKL3m9veq+Vvakqqp46degb4pj/hzNre/nVfiN46snagR+PGF2vLAdFyYuxfZv2bqby1XE3/w2YslOj9ifJcBWqvmp8COvG3fatX5L956KTC0Z90Dh92fyvxkTdynWl6H78ttDeszfH23b77atPbv753bnADrL9v/ZesDs+R+lm39q46KvXlp6x9Xhrx9IFl5fPXDu8Xvy6Jb0/z7WkeuENqyKisszV1zCqueHDnhyzNUlryI7bSavjsvElkOveg/cT9/8x73S1EcO7vlSEe5qWvEqPdBsV5ekU0QHu7efmOeC9fb/F4aG+jwf/lYf7uvf/XhVzCit7R2t5fCJ2ov3I9dGhXnaKSD/XLovUEaijs4O1UMTFxuMbyrbfz5FhPggU5RG+7j0fP9fWKjVZ3bPZbU5EeIArFo4J9nb3V9+Jz8zW3lqRqB5L2MxtTqT6YTzZx6XnL8nCec6B6ABX1Re1Qj0nUTh/eCA6yFX27zuwdXRz9wsO8XWSh/p4jlqVKG2srfLxKp0nhkcEe+ZOaBURvi49v08saOQNZVywu4v/wUzbIStjwrw1i2gXiq2tSFa/M2E/RDXiiKpPOArGvcsideGa2To6yBQKmUyhKjnHiQeig12tlQmh3q7qnF/1sEiIFy5u1jFR8Zm2IzfHhKo2NSHUy2XUBqzWzN7Z3SswNNhLFhng6TlXHeiivGTJierXtO23ODLMN3d4mxDm5fL6hvwGmnacuAubkRDk7jpVtUIrR2cn7JCE2Phk1Q5aGBnh56Laez6uquLGyzm7egaETBWBbq+vUm2zvaOTkCfIPH2cohdtSMTfbr7BYQEiwLX/L+qyxwIOQqGUyVRHi1m7hTGRfqqBwOMKtXeIiIiIiIgMyCfL/5g5vE+eD92+m97y7cCEFfNyP3Qq4apnwMITP86ytjT0u+RVMHnuL+7EciHP3TTjp3VTvT0FlZ05YRGfjh7wSO3Bgwf379+/e/du3WEf6b6G36aNRag5bM4PgnR25dfPqlatamxsbGRkVElNFAl2mTSxcOHC/Jbx9/eXJkp05A0re+ceI+esPBAd5vvvfefsvIIjd80Z4mglRGqiKky07zFxfUSIOqy1dg8KX/9hD0czkRwfe/BgbLzS0W3knPWRoT5SHKoaV3jXwiHOqucmK21Va18fLWXLqs6wfuEx6z/shzVnJquSSDPHHh+uj4l4/PDTWbv4+A1R9THGq8eo++fKnHxCo5+8oHqV9m5v/xwdqfdw084rJPrA4pHtVANVqKNn23YjF+6KlqLnJwUz0c0e25GZLLf2DA4P8XZRPaBUSl2ZHXxCwxcPaWdrlqlQWrv6rQwPeZwgKx//9MXB089XNYqJyEyMjVOonoV1RkSvxErNVOWF17Ry7jdnc3Re0bNuZNgB4XNUhZUq7T2FfbshH66MDPeTBn22c/X166Hqn56ZHBsnVwh7r6CwOUPa2ZtlypUyV9/QiNDAoEBVGWQm4lElyiTi55F4WLXNCjvvkLBgTwfVsx+/59LbO0RERERERKWpelXzgZ3bNHojoOvkBTn+7zUt+M1XOzG1NHzciUQl7aOf1s/4eb0gg6e/vs9EREREREREpJsCus2SASps32cyHOz7bJiK3/eZiqBM+j4bCyIiIiIiIiIiIiIifWP6TERERERERERERET6x/SZiIiIiIiIiIiIiPSP6TMRERERERERERGVDWn04SKPQUy6K5OiriyIiIiIiIiIiIiIShcT5zJUaoXP9JmIiIiIiIiotNWyqnpDcVdQeYA9hf2Vez53ouHLb9+ZmRinKzMFlREUPnaB9pxKapYyM0ElBsUrlbMoXUyfiYiIiIiIiErb/+zr/JN4VVB5gD2F/ZV7Pnei4ctv39WyrpqQnCKojKDwsQtyz29kW11QiSmr4mX6TERERERERFTaWjWxP3ImISo2np1nDRn2DvYR9hT2V+5HuRMNWcH7rtOLjtuOnj5x8Uoae0CXrrvpShQ7Ch+7QJpT6QkjI6OxPVwFlRgULwpZU+CitFR69OiRICIiIiIiIqLShRTm6NnEfxKv3UhldmmgallV/Z99HcSXVc1leS7AnWiwnrrv4i5d23M8/rrirjIrW1BpkZma1Lau2qmFo1ODx33SH6k9ePAgIyPj9u3bG/cdW7LlQOLNOxnZDwTpQxUTI/ua1d7q0b5vx5bVq1evUqWKJoMWRYX9JU0sXLgwv2X8/f2lCabPREREREREREREVAYePZGVlXX37t07d+5cv3795s2bmZmZDx8+FFQ8lStXNjMzq1mzZu3atatVq1a1alVTU9Pid38uVPpsLIiIiIiIiIiIiIhKnSYDNTY2trCwQFqKeBRpKfJNKZUWVFSaIU1kMpm5uXmVKlVQyKU/8gbTZyIiIiIiIiIiIiobUhKKkNTMzEz69+HDh4ye9UIKmpHpm5iYIHrGRClHz4LpMxEREREREREREZUhKQ+VOj4jJM2ROzOGLqwc+bIUQIsnYbQoXUyfiYiIiIiIiIiIqCxpUlEjIyPGzfqlKdvSj54F02ciIiIiIiIiIiIqczlCUmbQxVcmcXMOTJ+JiIiIiIiIiIjIsBhCckrFx/SZiIiIiIiIiIiIiPSP6TMRERERERERERER6R/TZyIiIiIiIiIiIiLSP6bPRERERERERERERKR/TJ+JiIiIiIiIiIiISP/0mT4/ePDg3r17aWlp2dnZgoiIiIiIiIiIiIjKjomJiYWFhaWlpZGRkSgLekufET3fuHHD3Ny8evXqjx49EkRERERERERERERUdipVqpSdnY3YtlatWmUSQFcWenLv3j1Ez8bGxoyeiYiIiIiIiIiIiMocoloEthYWFnfv3hVlQW/pc1pamomJiSAiIiIiIiIiIiIig4EAOj09XZQFvY28kZ2dzV7PRERERERERERERAYFsW1Z3ahPn3cdJCIiIiIiIiIiIiKSMH0mIiIiIiIiIiIiIv1j+kxERERERERERERE+sf0mYiIiIiIiIiIiIj0r7IoLYcPH27evPmff/6J6TfffLO5WseOHUeNGrV9+/bcy2uWgUGDBq1evVoU3tGjR/H0qKio/BZQKBS//PKLKHWHDh3Chnl5eT148AB/yuVy/Llt2zZRAqTXkrRv337SpElXrlwRhff222+/8cYbBSxw6tSpEnoLVK5pH4GSAg4k3T+SP/zwA1aVlpYmSEuvXr1ylPb48eNjY2MxsWPHDlFU0hfy/PnzpT9jYmKklaekpAgiIqJngKY+4+Li0qdPn9mzZxd8EkQD5+TJkzqsWGCdn3zySQELhIaGotVw4cKF3A8V/xRfkZToPtI2ZcoUzEQVa8iQIYIKac2aNahYolk6ePDgOXPm3Lp1CzOXLl2Kgr1z547QX6PyzJkzOBKkXfbBBx8IIiIqO2XW97lu3bqfffbZ9evXcfqZOHFiUFAQqgh5LnP//v2IiIhZs2bVrFnzlVdeEXoVGRm5bNmykSNHirKQmJi4du1anHdFyfP19W3Xrt2NGze+/PJLBNBhYWFC37DO7Ozs7t27C6JcpCNQmjY3N89vsbL9SFYAn3/+eWZm5r59+3788ccZM2Y0atTIysrqueee+/nnn59//nlRDBYWFriSJzW39uzZU6VKlYyMDEFERPQsQX2mVatWR44c+e233/Dv77//bmycd3tq4cKFqM+88MILonhu376Nl1i9erWpqWnuR3GiL/4pvoIpoX2Edujw4cOl6erVq+NftGHR9hFUGAkJCR9//HG3bt3QzE9KSvrmm2+QOCODfvXVV1988UWpjaCvRmXTpk1jYmIEEREZgNLr+5yDmZnZSy+91Lt37x9++AEVpiVLluS3TIcOHcaNG4c/jx8/jn9xARPxio+Pz6+//oo/N2zYgGvOSLVGjRq1f/9+6Yl//vlnr169evbsidhaszYs9vbbb0vTWAlC2E2bNk2fPl3qd4yMOysrKzg4GE/s2LHj+++/j2hYlDBPT8/vv/8+PT1de2ZycvK0adM6d+6MRxHK37t3T6i7ebZu3Rr/vvzyy0OHDv3777+RWeOUvH79eulZK1asGDBgAJ6FdyRdNM6hYcOGKEy8u06dOp04cQL5lNQxHNeZPTw8Tp8+nefror6LosClaVzbR/lIq9qxYweeiKcLrf6nuDywbt26P/74Y/To0ULdNfKtt95ydXV97bXXli9fLuiZJx2BEqmWj48eap9du3bFwfzTTz89evQox0cSh+XkyZNxxKJhcODAATwFy+CTizn4OJ8/f16zch5vGs7Ozihhe3t7TDdr1gzTjo6OFy5cwDfksWPHhLpJhu/PmTNnorhQaNeuXcNMXb79sOaLFy+eO3cO03v37kULQZqPnYLvAeyRLl264HtAaoZJX1n4XkLrAn+ePHkSX1zYcV9//TUW++KLLzATTQ4/Pz+p58vOnTulteHL+dNPP0XrDluycuXKefPmctM4MgAAEABJREFU4UsPpwB8FwkiIqKyhvoMzlCIHVGHOXPmjNTWyF1j6dOnD1I2nBYRruHPbdu2jR07Fme0d9999/Lly/mtXDp7hoaGonY0aNAgXEvGzCtXriCbk37KefXq1UmTJuHUibOq1JVE+xSfZ2X+GVRC+6hmzZqaqmyTJk0wZ9GiRai0iCc/t8V6sE400KKjo1HdwqrQaBX0X1LZtmzZEgc5aqS4rILKP+b89ddfOJLRLs7RqMzdhBd57U2h7vmONaB+i+UPHjyIObdu3QoMDERdFA0EXISQFuPHhIioTJRZ+qxhYmKCkwRqTppwMzcp6GzQoAH+xbXrLVu2IFnGiQQpKk4eOA+Fh4fXrl3b398/JSUF2esnn3zSqFEj5Ko5gt0ckH0j9bCzszt16hRWi8vjqPOh2rFs2bJLly7NmDFDlDBvb29EbDnCMlRicBL97rvvPvroI4TLP/74I2ZWrlxZqVQaGRlNnTo1NjYWiczs2bOtra0RXgt1+eBPVJVwWj179iyCvPxeEaEz3my9evWQ7GNtmLN58+YPPvgAZZvn62Lbdu3ahRMziuWff/7J/60IVO9Q5qhy4dURRmNfPHjwYM2aNbiOjacjqxJE/4Wja/fu3biMhCMQhyVi0BwfyY0bN+L7AUejlZUVjnk8BYcoPtf44CxYsABJqLQeHm+Fgi+Tw4cPo2n07bffomqO8sRMXb79qlevjqYCWr+4PIA0GdcFpfnYWVgPqvvIlNGEkEZSkr6y0AzAVxP+nD9//o0bN/DlUKNGjevXr1eqVAkzP/vss4yMDFwsHDhwIL7ZpHwZ+x1faNgABOgIxG1sbNDMxnGCLyJBRERkMNB+wb/SRdncNRacVYW6ejxhwgRUv9euXYsGC/5FaoZwOb91SmdPxGEhISE4b0or0YY2Dk7BuLjr4eGBqnt8fLz2o3lW5p9lJbGP8iS1qnDxHhXUu3fvoury5ptv4nI76leoVgnS0qpVK2T3qBkieg4ICEB93tLSUnsB7UZlfivJvTdR7MijZTLZhg0bqlWrhsYFmgZbt25F++Lnn392c3NDtVPqocWPCRFRmSj79BmkJAJn/RzzEUlrxmlC7QHJlDQf5w9cBUVEhQvL+BNxVZ06dXBJE3W1mJgYxK+YQAj13HPP9e3bV+gMa8M1bS8vr8aNG+Ni7N9//13SQ8pWqVIFcQ/OrJpufThNIjiTOofigvmLL74ovUcJtq1Hjx6omEqnbVzVl0ZwRpaEf1FzeuWVV5AE5fkLow8//BAliSeiBoYzvWb+8OHDkePjVJ3n66KC6+DggAJH6qTp6vhUqAojYEK1GDE3rlpjgzUXpemZJR2BEinxRBUfx8n06dNxeIwZMwYf2BxPwbGHYwmH344dO5KSkoT6gBTqj3z9+vXd3d2lxXi8Fdbzzz/fqVOn1q1bOzk5SVeVdPn2e/ToEfbFnj17kAXj2wDfutJ8BMpoNgQGBko/R7169armKfjqbteuHZ54/Phx6Vvr9ddfxw4S6u86ZNb42sGWzJo1C1/aaOxJz8JTmjZtiu83zBw0aJCnpydmohEuiIiIDIbUfpF+8ZO7xqINF1ZRRQkPD0dFHVmY9okyTzhX4ozZtm3b5ORk7fk4deJ8jdN3w4YNkdyhzu/o6Kj9aAGNiGeTfvcRLrFrqrJSD9wcUBfFHkH5Y1Vt2rSRBo5AHVWQFnNzczR+UW9EQcnl8vfeew8psCik3HsTf966dQutWltbW0TbUVFRuCSA9kJGRgYyhO+///7+/ft4OX5MiIjKSpmN+6yBc8CRI0cQeVStWjXHQ9K4z5gwNTVt0aKFlFlAjguk0hNxwVOouwxI9QzpT+mefhLMl/7MysrKc4guLCCN4QXSpdGHDx+KEoYYHVfFNRfYK6lp3iDehXQtXWKshjlmZmbSn9IWSm95165dtWvXzu+FNKPu2tvb46ysmS+9Vn6vi5mpqanSTE1hatfklEplfq8o7ReFQoGN1Ow7emZpj/uMuiD+RaU8JCQEgTKyzh9//BH1QqmLigRHzieffDJixIh169bNnj1bGmRG8+muVasWKpHa6+fxpjupGCXS51rHbz/U8r/99lt8IWNCM/PXX39FHr1161ZpAe3lpa8UpM/iv98b4sl3jre3d+5+1tLuk0a3xIUx6buoFL6NiYiIdIf2C/793//+l2eNRRuCsJUrV3711Ve4vtu/f/+nrtnExET6N8e5D+dT7TN4DgU3Ip5N+t1H2uM+29nZ5V5AqsBoWmpSTYYVmBzQtNy/f/9rr70mFdekSZP++OMPaQCTPOVuwj91b2rMmzfP2to6JiYGy0gVTn5MiIjKSpllNJmZmYcOHdq+fTsyqXPnzk2bNi33MtK4z+Di4pJnnCRlVVu2bLl58yZOP4ifEFI///zzCCy2bduGM5P0G3AJ4qozZ87g+jPSXs1dO3C+wWJSLz+s7ezZs//88w+unSJMwevmDsT1DjXL8ePH4y1If+Jt4jLsnj177t27t3PnTgRz7du3f+pKcHVdqNNnvDs/Pz/t0a41NKPuakfPGvm9brNmzZKTkzHn6tWrmi7VKEmh7nB96dIl7SEOkIbjkjImcNkfr4I0CntZGp67Y8eOguiJpKQk1MVXrFiB2uebb77p7++PIxCfPqH1kZQqmvgSwBGIxgOWx6UOHJBC/Wu7jIwMaQBEweOt8FDU+NZFqcbFxUm/adDl2w+V9aZNm+Ki4L59+zp37qyZj8sA2H3YU2vXrrWwsMh9RQqP4lVwjeH8+fP4mpKaYZiJVzlw4EB6evrvv//+/vvvF3Api4iIyEBcvHgxOjp6yZIlM2fO7NChQ8+ePfOssUiRltR5WbpejgXQ9kFVOffPPXWEmjYu5ON8mpCQsGHDhubNm586dUrzaNEaERVSCe0j7XGfpQEhqQhWr1794Ycfzpkz5+DBg2vWrDl69GijRo1yXFbRNCpFXk34PPcmmgM2NjZo+yPdxn53d3dHWo3diqfg0cjISKHuNcWPCRFRWSmz9PnKlSujRo2aPn064ldcZ9bu86g7JBqff/75pk2bevXqhVoC1oOzTrVq1bBaZCvDhg2TfhsunaLeeOMNxBzdu3fHK6L2ICUgrVu3xpkJV7kReA0dOnTs2LFTpkxBHIaQq4BrsPqFjXdwcND8+dFHHyFNfvXVVxcsWICLutiYp66hVatWeMurVq3CW8Bblm7zVVh5vi6u8Lu5ueHawKJFi3BulkryhRdewMzFixcj6ZZeSyrMtm3bIpIePXo0Eqgvv/wSpY2ICmf3wMDAou1fqkhCQkJGacnOzkbFHXVEXFvCAebt7T1gwACh9ZFEk2Dw4ME///wzPpI4vFErxXUaxMr4XONQx1UrVP2F+tjj8VZY0i9G8RlHeeJLD3N0+faTujCjNv/cc89hDZr5AwcORAMA32Pm5uaenp7fffdd7t8wTp48GV/O2O8IoKtUqSL16sJ3DuJs7GtcORgyZAiuGgoiIiLDhvrMmDFjtmzZ0r9/fzQ9EGbVqFEjd40FM3GOw8Lffvst6ic4t+I6a3h4OHI3nCWl29wVwYwZM3AKRq1p/vz5AQEB2qdjUaRGRIVUtvuICjZy5EjUOTdu3Ig248cff1y9evXc1U5No1Lk1YTPc29WrVoVh31GRkaXLl2OHTsWFBSE3BlrOHDgAD4vPj4+0gB9gh8TIqIyUkkKFIovMTFR6hJLREQGCxX0W7duIcEXpQiXGa5everh4ZGSkjJo0KCvv/76lVdeEUREREREenLx4kV/f/+pU6dqhvsjIqIcbty4YW9vL/RBMzzvwoUL81sGX8vSRNmP+0xERBVbvXr1goKC5s6di+lXX31Vc8dIIiIiIiK9kEbd1Ny1iIiIDAf7PhMRERERERERERFVZOz7TEREREREREREREQVB9NnIiIiIiIiIiIiItI/ps9EREREREREREREpH9Mn4mIiIiIiIiIiIhI/5g+ExEREREREREREZH+MX0mIiIiIiIiIiIiIv1j+kxERERERERERERE+leq6XNWVtb169dv3bqVnp4uyidzc/MaNWrUrl3b1NRUFE8FKA0qK3o8DksHj/an4nfLU5W7w56IiCoY1mdKgn7P79xHJYH7SBesqRIRFaD00mecZo4dO1a3bt2mTZtWqVJFlE8ZGRk4U8bExLi4uBTnvFIxSoPKir6Ow9LBo10X/G55qvJ12BMRUQXD+kwJkc7vKNuWLVsW8/zOfVRCuI90wZoqEVEBjAIDA4U+pKamWlhYFLDAtWvXqlWrVq9ePRMTE1FuYePxLh49epSWloYJUVQVozSorOjrOCwdPNp1we+Wpypfhz0REVUwrM+UEOn8jonin9+5j0oI95EuWFMlonIhPT3d2tpa6AO+8aSJ6Ojo/JZp3769NFFZlBZcCaxRo4aoEPBG8HZEMVSk0qCyUvzjsHTwaNcdv1ueqpQP+xUrVrz22mvt2rUbMmTI3Llz79y5I81PTEw8evRojoVPnz7dp0+fp67z/v37zZs3/+ijj7RnfvbZZ5iJhzDt6uoql8tFeVMmZVXuVLx3VFYMsyRx2Hft2vXTTz/N89Fff/111qxZwsCgBTJt2jQUXXh4uGbmhAkTTp48mXvh0aNHN1fr3LnzyJEjC2hpVEisz5QovZzfuY9KFPeRLgykgZZfrczf33/Tpk3CUI0aNcrb27vgZU6cOPHiiy9KJ6Nvv/1WEFE5UXrpM2q3FebHNXgjxRymqiKVBpWV4h+HpYNHu+743fJUpXnY//TTT7/88guq6Tt37kSchBR17NixGRkZeGj37t3Hjh0TRVW1alU8PTMzU/oTYdmRI0csLS2lPxHo2NnZiXKlrMqqPKp476isGGBJbt68ecSIEbjcotkqw7dt27aGDRsix//tt9+kDiw7duyoU6fOCy+8kOfySDFOnTr1+++/v/7663PmzMHC4pnB+kyJ0sv5nfuoRHEf6cIQGmgF1MoM2fnz562srOzt7WNjYwtYDNEzAuhTau+8844gonKiVO86SEREVC6kpqb+8MMPqL43a9YMfzZt2nTRokUDBgxYvXo1ar3Lly83NTV9+PAhavOrVq1atmxZ3bp1mzdvrnl6WFjYunXrKlWq1KZNm0mTJlWu/J9rvXjiSy+9tGfPnm7duuHPgwcPtmjR4uLFi9Kjrq6u4eHh2ICPP/4Y8y9cuJCWljZ+/PhOnToJg1SGZYWGytdffy2Xy9HYe/PNNzt27BgaGhoTExMcHIxHx40bh0IbOnSoMCSFfUdxcXGzZs16/vnn0XpE6a1Zswbv0cbG5tVXX/3111+lHkx4ywsWLEAZYn5gYGD16tVXrFjxzz//3Lt37+zZsw0aNOjbt+/69euvXLmCMundu7eoEAywJLGS+fPn40V37drl6emJOQ8ePJg9ezZWW6tWrXr16kmLIZtGHIDcFh8WX19fzQ8SywRKDJ9TTODNpqSkWFhYLFEr+Fm2trMnfyEAABAASURBVLZ4g40aNUK64ebmZmxsnLvolEoldsG5c+eMjIzwkcc7xcSBAwew2K1bt7p27Tp16lQ8URARkf4UUCsbOXIk5ly9etXb2xunQnwPT58+HWdJnOlwMsVDuPSIPLesOqf/8ccfHh4eqDTiZOrs7CzNxNbOnDkTQTNqiR9++CHOpJiDswxOMagGDB8+vEePHiKv03ee5yBBRGWn9Po+d5N1szC3qDD/4+0IIiKqoI4fP46QVKq4S0xMTJC2YH6rVq1eeeWV/v37I05F3f2bb75BhvX9999fu3ZNWnLv3r0Is3788Uf8i8BL+/fsgJpxdnY2qtd//fWXNCciIqJ79+45hgvAYmfOnMELYT1vvPHG0qVLhaEqw7JCuwIvgfx60KBBSP0wB+0QvNCRI0eioqKQcL3++uvCkBThHSGOT0pKQj6Iort06RIW+Pnnn7/77rutW7dibUL9K+YJEyYgyEPQjzRQehYeOnr06CeffIJVITZFgaDYp0yZgqIWFYIBliQuFJmZmdnZ2eHg//PPP6WZGzZsQLyLNj/WphmCZvHixVgtlhkxYgReLisrS5QdbAka8EIdlONffNUMGTJk27Zt8+bNQ6Bf8HMRaqB5jzeeZ9Ht3r0bn3QUFwoZKTO+ELDYRx99hNLDBSfsi5UrVwoiItKrAmpl0p8Imj/++GN8XSPSReCLb2ZcccQ5EecmXLPH978oCzgTbdmyBYE4rmhiC3GKl+Z/8MEHqEniocaNGyNfxpz3338fFUtcRUYqPW3aNJxodDwHCSIqU6WXPhMREZUXqLDWrFkzx8xatWrdu3dPe86hQ4deeuklzEeCo+kIuX37dlSLq1Wrhuo+0s88f5mOZ8XExKSlpaF6jTyrQ4cOuZepUqWKq6srJpo0aXLjxg1hqMqwrIKDg5HfYaJ169bIEzFhZGSENtXcuXMXLlw4Y8YMKVU0NIV6R0I9psTgwYMRniINxCGBMrS0tJQWg/3797do0ULqTo6ZKENp/ATErCjYqlWrOjg4tG3bFkWBtqghH0hFYFAluXHjxp49e2LC2dlZCmSF+rBHJo52L9aAFrW0JNaMo93GxgbN7MjISFNTU1F28F4Qi6MMb9++jc/s33//jUw5Pj7e398fDfinJuMowytXruRZdChbXFLCNHLtt99+u2XLllgMhYmSx3tH2IFrRYKIiPQqv1rZ3bt3pWlcuMU3//PPP49z0Llz53CGwjn0999/x4mgS5cuTx12uYTs27cPpwlcxEWFEKeJqKgooX4vuII7dOhQnEP9/PxwZr98+TIuXkpnW5ytcN75559/dDwHCSIqU/y9GxERUU5WVlbIYnLMvHnzZu3atbXnpKamWlhYSNOaewenpKSgEv/ll19KfyI7zr1+hKSo/W/ZsgUvhMgszx8DakawRdplyLekK8Oyio6O/u67706ePJmZmYnmijTTxcUFrRQUmjSegAEq7DvCYtKEdhlq2pYoQzTStAczkYJR7UxTGmQTqavUv7XCMJySfPjw4YYNG65fvz5z5kxpzl9//YV0VfuFqlevjj+l1Wq2pMyhAJOTk7/99tvZs2cjbp40adLx48fxSUShNW7c+Pz589od6HJA8x7vBR9n5Pu5iw57ZNq0aWvWrJkzZ86gQYPeeOMNlDBCfEFERCUmv1oZLvtJ05rvYUxcvXoVyy9btuy3337r168fYt933nmnTp06otRtUsOZVPpToVB069YN13E1NUZJjjmYxokVwbou5yDeY4OobDF9JiIiyql169aosyJSadCggWbm3r17UX/VXgxVds1dXFBRliaQMU2fPj2/4YYfqWGiR48eP/30E6r+ffv2FeVZWZXVnTt3Pvzww9DQ0IYNG6KZ0b17d2n+4cOH7927l5WVdeTIkTZt2ghDUrR3pIHlNfcyQktSmkAZenp6fvHFF+JZYmgluW/fPkdHx127dkl/IvX+9NNPkT7jsNe8kCYOqFWrFrawbt26mD527BjiXZlMJsqO1Ad5x44ddnZ2aL1jk6QfDeDfgi9X7Ny5E3sBl3mSkpLyLLqX1fDGp0yZgsge69f8JAKRN6YRcAsiItIfXIP/559/4uPjcVaS5uCbPCIiQlPX0nwPI7TFiQ8T+CrGpdPs7OxFixbNmjUrJCRElC6cE1FvxNlHutyLDe7SpQtm1qhRQ7pqC6hD4k3hgrFmjlDXJ7GMsbGxLuegsWPHCiIqO6U38sZ25fa09LQK8z/ejiAiogoKtdvBgwd/8sknqPtKc3744QcjI6M+ffoIdV9IqTPyCy+8cPDgQaRXiGA0I70iDvvjjz+kXzhu3LgxvxH00DxITEw8e/Zs27ZtRXlWVmV19epVMzMze3t7TK9duxatJrwQQmc0nGbMmPGxmlKpFAZJ93ek/SwkgwcOHLh16xaajuvXr5dmduzY8fjx4+fOncM0GmZff/21eJYYSEnikEZTWfMnjvaUlJQLFy5gQvrZLz4du3fvlh7FkjjaMXH06NHx48cbwn2QMjMzlyxZ8u677wp1DHH58mVM4JJSo0aN8lweH+TVq1d/9NFH/v7+aPbnWXS//fabFGEg3cB6LCwsOnToEBsbe+XKFewOfGNERkYKIiLSK1tb2169euH7fP/+/bj8eebMmffeew8TmkHPcFZSquEKorOzM769cSYS6uGhcTWxTDoIIxxHTKz5pRFOi507d960aVOdOnUaNGiwfbsqeFm+fDnOU/Xq1XvuueewPOYgZMe7a9mypY7nIEFEZYp9n4mIiPIwadKkuXPndurUCUFJ1apVe/bsKd23BA+1a9fugw8+QIaCAAXTqNCjcjxw4MATJ07gUSQsSG3efPPNGjVqIPbCSvJcf6VKldzd3bFABbgHd5mUVdOmTf/3v/95e3tbW1v369cPeeKUKVMQOKIBg8hPqDtlYzPef/99YXh0f0fjxo3TLID3hUx/2LBhVapUGTRoEMJNzETRzZs3LzAwEC1GZIhSgPjsMISSRKseF05yHGndu3cPDw8fPXo04m+8Flbu4eEh3W/znXfe+fTTT11dXR8+fIiLJZqBQcrQjz/+OGTIEGk8kJdeeglN/YkTJyK/MDc3z7Hkh2pCfdkJH23pIlOeRde3b9/g4GAsnJycjIsB+JbAv5999hlykLi4OLx9Q7spKBFRxYAzC77V8a0rdQtA1euXX36RYuVHjx65ubmNHDkS6TOiZ5xAcQ5CfWnq1Kk3btxQKBTSLftKGYLmHGcEXKb96aefhg4dumDBgpkzZ+Ikbmdnt2jRIqG+rwPmSHerxkXQatWqYaYu5yBBRGWqkvS7xeJLTEysVatWAQscOHCgffv2oqIo5tupYKVBZaVcHEg82guF3y1PVfrvUYpEpcCFCsayKjWRkZFLly5dvny5oOJhSZKOWJ8pacUvYe6jksZ9pAseh/qFDH3ChAm4eKk9whsRFRkuNUk/ECw+zRBtCxcuzG8Zf39/aaL0Rt4gIiIqj7p3775+/XpcZBX0NCyrEnX79m1PT8/z588/evRoz549rVu3FlQkLEmikjB79uynzqGyxX1E5U61atXGjBkTGhoqiKg848gbRETPivfee2/Hjh05Zvbr1+/zzz8v+IkjRowYPHiwZsC4Z02rVq3eeeed4cOHd+vWbebMmYLyx7IqUdWrV3/77bcDAwPv37/fsGHDiRMnCioSliQZuODg4KpVqyJw0Z6ZmZmJ71jp/pDa83Oco/fu3btixYrvvvtOlKLk5OQff/wxd3VCmjN27NjatWuLioX7qCSwpkq57dy5c9u2bT169BBEVJ4ZUPp84cKFL7/88siRI40aNRo9ejQarpiZlZWF5uuePXssLS29vb1HjRolLYwT9vr165OSkl588cWPP/64Xr16omJZu3Ytqi/ac9q2bfvcc89t2LDh9ddfT09Px4R049pLly6hfqMZpJ+o3OHRXmq++uoraWLatGnVqlULCAgQpJvhaoJ0wLIqUf3VBBUbS5IMWVRU1FPjtvxERkZ26NBBlK7Q0FBpg/MMN83MzCZPniwqFu6jksCaKuX2ipogonLOUNLnu3fv4orrlClT5s6dixh6/PjxCJSdnJykoeXDw8Nv3ryJk1CTJk1efvllhNEhISE4TTZr1mzZsmU4U4aFhYkKp0uXLnXq1MkxU8rgtJ08ebJ69erM46hc49Fehh48ePDdd9/t3bvXyMioZs2aEyZMaNq0qVDfERttgFq1amn330lNTf3ss88uX7788OHD//3vfxMnTrS2tr5+/frixYuvXr2KBXD5EF/gVatWFURERM+S5OTkvn37+vr67t+//9y5c7gOd+fOnRMnTqSkpKCZ8+qrrz51AWk9V65cwaV3tIOkP7/99tu//vqrbt26L730kua18jxHSw4cOCDVoEaMGNG9e3fpcuCjR4+6dev24YcfIs779ddfcQYX6tv24BqMt7c3zuDBwcHS06dOnWpra3v06NEczw0MDOzUqVN+7/3+/fsifzk6GZQh7qP8GM4+yo01VSKiCsBQxn3G6WHcuHGenp4WFhYvvvgiUuZTp07hTLNx40Z/f3+cVBA0v/HGG/hTqE/YPXr0QAxdo0aNd99995yaeAakpaWtWLFC+0aRR44cUSgUBw8eRB0oISFh9+7dqCpt3rwZD2VkZKCgENyjMoTaifSsQ4cOxcbGbtmy5fDhw4LIgPFoLzU///wzCmr58uUocNTIpfvF3bhxA20bVN9//PFHd3d3tLukhdEiwqXBlStXYvmkpCQ0tzATf5qZmX2vZm9vv3379vxeC+2E6fnI/UNLIiKicqRy5cr37t1D8+SHH36YPHky8jK0aJYuXYp8cMmSJbosINm3bx8yxEqVKgn1T843bdr022+/YYHbt29LC+R3jhbq35LiIj3O5pju3bv32rVrpfnHjh1Da6tr164eHh5Sewq2bt2KOQMHDty1axfSVczJzs7GK/bp0yf3c5/aV3fa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91A8FOWTkTB6J/2d6VnTzSqZGRkZSR2f8e/sFX9NH/qqIDJI+DwqFAp9DcaAz7I0sXDhwvyW8ff3lybY97kM4IRtryaIKjpUj+qpCSp5+G5haesFS1J3LCsdqcIUtOasRfnSPr29MDw86vSFJamjcvr5fdbweCZ6KiTLeg+XdSeNvIF/K1eubPrAdJZyVs/MnivNVp4xOnPO9FxKpRRRHtg8snk+63nHB45DM4e+9Oilymqa6FkQUT6YPhMRERERERERUYlDXCvUWa3rA9c299o81KL903x9/Uy/OLQDZSk31zA2NjYyMpKmBRE9DdNnIiIiIiIiIiIqQVL3Z/EkgJYmHjx4gJmInqU5mgE6hGHI0a9Z6uksDbWhHT2z4zNRwZg+ExERERERERFRyZJSWoTLUoyL0Fkzx3AS5/xUUhNP+kFzwA0i3TF9JiIiItI/7ZtlEVH5ws8vEVHJ0SS2RkZGwvD6O+cnR9zM3JlId0yfiYiIiIiIiIio9Gh6PZe7TsTMnYkKi+kzERERERERERGVNia5RM8Cps8lgrc9pWcHj/bSxNLWF5ak7lhWumNZ6QtLUl9YkrpjWRk+7iPDx31U0spjCUvbPCcsQjwbGKaTISvD7xB9ps83btwQREREREREREREQrzZtbV4ljAZI8pNn+mzvb29ICIiIiIiIiIiIiJDkpiYKMoCR94gIiIiIiIiIiIiIv1j+kxERERERERERERE+sf0mYiIiIiIiIiIiIj0j+kzEREREREREREREekf02ciIiIiIiIiIiIi0j+mz0RERERERERERESkf0yfiYiIiIiIiIiIiEj/mD4TERERERERERERkf4xfSYiIiIiIiIiIiIi/WP6TERERERERERERET6x/SZiIiIiIiIiIiIiPSP6TMRERERERERERER6R/TZyIiIiIiIiIiIiLSP6bPRERERERERERERKR/TJ+JiIiIiIiIiIiISP+YPhMRERERERERERGR/jF9JiIiIiIiIiIiIiL9Y/pMRERERERERERERPpXWRARERERERERERGRDpRKZWZmpigVD9VEecb0mYiIiIiIiIio/IoL8Xb1CU3IfwFlTJCXu0+4XJRDyrgQH1dPv/CEghdLCPNx9wqOUYrSpowJD/LxdHFycnL39g2JTFDPVET6uTpp8wwsg00zZDEh3u4+oXGiPELufPTo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RERERERERERERKR/TJ+JiIiIiIiIiIiISP+YPhMRERERERERERGR/jF9JiIiIiIiIiIiIiL9Y/pMRERERERERERERPrH9JmIiIiIiIiIiIiI9I/pMxERERERERERERHpH9NnIiIiIiIiIiIiItI/ps9EREREREREREREpH9Mn4mIiIiIiIiIiIhI/5g+ExEREREREREREZH+MX0mIiIiIiIiIiIiIv1j+kxERERERERERERE+sf0mYiIiIiIiIiIiIj0r7LQExMTk+zsbEFEREREREREREREBgOxLcJbURb0lj5bWFikpaUJIiIiIiIiIiIiIjIY6enp5ubmoizoLX22tLRUKpWpqansAU1ERERERERERERU5hDVIrDNyMioWrWqKAt6G/fZyMioVq1ad+/evXHjBgNoIiIiIiIiIiIiorJlYmJibm6O2BbhrSgL+rzrIN6DtZogIiIiIiIiIiIiomebPtNnIiIiIiIiIiIiIiIJ02ciIiIiIiIiIiIi0j+mz0RERERERERERESkf0yfiYiIiIiIiIiIiEj/mD4TERERERERERERkf4xfSYiIiIiIiIiIiIi/WP6TERERERERERERET6x/SZiIiIiIiIiIiIiPSP6TMRERERERERERER6R/TZyIiIiIiIiIiIiLSP6bPRERERERERERERKR/TJ+JiIiIiIiIiIiISP+YPhMRERERERERERGR/jF9JiIiIiIiIiIiIiL9Y/pMRERERERERERERPrH9JmIiIiIiIiIiIiI9I/pMxERERERERERERHpH9NnIiIiIiIiIiIiItI/ps9EREREREREREREpH9Mn4mIiIiIiIiIiIhI/5g+ExEREREREREREZH+MX0mIiIiIiIiIiKi/7N3/0BqnHnCx/Fb+5a4eutKOLgTjsRWXZXYSGxwZxwJR8L1BsKRUGQcCUdCkVE2mVEkFBlHxpFRZBQZRUbBlVG0TGT0Vr3nmWiZaJm6YJmq2/Lb3cyMRtLon/279867n49dpdEATffTPQq+PPM0xFOfAQAAAACIpz4DAAAAABBPfQYAAAAAIJ76DAAAAABAPPUZAAAAAIB46jMAAAAAAPHUZwAAAAAA4qnPAAAAAADEU58BAAAAAIinPgMAAAAAEE99BgAAAAAgnvoMAAAAAEA89RkAAAAAgHjqMwAAAAAA8dRnAAAAAADi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" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+  </div>
+ </div>
+    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 03- Validar mensagem de erro de Margem_ADC maior que Margem no Produto por Loja</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico em 'CONFIGURAR PRODUTO/LOJA'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do Desconto Produto Loja '10004355'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When altero a margem para ser menor que margem_adc Produto por Loja</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem da margem 'MARGEM_ADC deve ser menor que MARGEM'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 04- Simulação do token com tag estado habilitado para status APROVADO</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When habilito a tag do estado exemplo 'Santa Catarina'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR VENDAS' similador de vendas</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o número da loja que reprensenta dentro do estado habilitado '18'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o código do produto exemplo '141'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When preencho os restantes dos dados para habilitar o botão Simular Token</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão habilitado 'SIMULAR TOKEN'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a label de status do token 'APROVADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 05- Simulação do token com tag estado habilitado para status REJEITADO</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When desabilito a tag do estado exemplo 'Santa Catarina'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR VENDAS' similador de vendas</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o número da loja que reprensenta dentro do estado habilitado '18'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o código do produto exemplo '141'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When preencho os restantes dos dados para habilitar o botão Simular Token</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão habilitado 'SIMULAR TOKEN'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a label de status do token 'Estado não habilitado para gerar token'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="47"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 06- Validação da mensagem quando Meta Loja é Irregular</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão em 'Configurar Loja'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código da loja exemplo '566'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When verifico se a Meta Loja está 'Irregular'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR VENDAS' similador de vendas</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o número da loja que reprensenta dentro do estado habilitado '566'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o código do produto exemplo '4477'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When preencho os restantes dos dados para habilitar o botão Simular Token</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão habilitado 'SIMULAR TOKEN'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a label de status de erro 'Desconto solicitado menor ou igual ao desconto da alçada "Balcão" (0.00%)'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="60"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 07- Validação da mensagem quando DRE Loja é Irregular</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão em 'Configurar Loja'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código da loja exemplo '567'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When verifico se a DRE Loja está 'Irregular'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR VENDAS' similador de vendas</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o número da loja que reprensenta dentro do estado habilitado '567'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o código do produto exemplo '4477'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When preencho os restantes dos dados para habilitar o botão Simular Token</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão habilitado 'SIMULAR TOKEN'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a label de status de erro 'Desconto solicitado menor ou igual ao desconto da alçada "Balcão" (0.00%)'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 08- Destivar o Estado e validar no Simulador de Token a mensagem de erro</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When desabilito a tag do estado exemplo 'Santa Catarina'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR VENDAS' similador de vendas</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o número da loja que reprensenta dentro do estado habilitado '18'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o código do produto exemplo '141'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When preencho os restantes dos dados para habilitar o botão Simular Token</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão habilitado 'SIMULAR TOKEN'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a label de status de erro 'Estado não habilitado para gerar token'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When habilito a tag do estado exemplo 'Rio Grande do Sul'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 09- Destivar a Loja e validar no Simulador de Token a mensagem de erro</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão em 'Configurar Loja'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código da loja exemplo '18'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When verifico se a Meta Loja está 'Regular'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When desativo a tag e clico em salvar</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR VENDAS' similador de vendas</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o número da loja que reprensenta dentro do estado habilitado '18'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o código do produto exemplo '141'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When preencho os restantes dos dados para habilitar o botão Simular Token</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão habilitado 'SIMULAR TOKEN'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a label de status de erro 'Loja não habilitada para gerar token'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão em 'Configurar Loja'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código da loja exemplo '18'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When verifico se a Meta Loja está 'Regular'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then ativo novamente a tag e clico em salvar</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 10- Validar se existe o id do token loja no desconto produto loja</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão em 'Configurar Loja'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código da loja exemplo '18'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When verifico se a DRE Loja está 'Regular'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico em 'CONFIGURAR PRODUTO/LOJA'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do mesmo que esta no token loja '18'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido o popup com a seguinte mensagem 'Produto Loja não encontrado'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="117"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 11- Validar chaves compostas ID Estado e ID Produto</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão configurar produto 'CONFIGURAR PRODUTO/ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código no produto estado exemplo '195'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When verifico se o retorno do '195' consta na table list</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When retorno para o home Alçada de Desconto Pricing</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão em 'Configurar Loja'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código da loja exemplo '195'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then verifico se a DRE Loja está 'Regular'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 12- Validar range data início e data fim e a mensagem de alerta</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão configurar produto 'CONFIGURAR PRODUTO/ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código no produto estado exemplo '195'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro uma data inicio com dois dias atras seguindo o numero do código '195'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido o alerta referente data não conforme 'Erro ao atualizar Produto Estado: campo Data Início e Data Fim devem ser maiores ou iguais à Data Atual'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="134"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 13- Validar switch IMPORTAR CSV e EXPORTAR CSV do Token Estado</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'ACESSAR ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo usando o estado exemplo 'AC' para 'INATIVO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido se o estado está inativo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then edito o arquivo usando o estado exemplo 'AC' para 'ATIVO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido se o estado está ativo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="145"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 14- Validar switch IMPORTAR CSV e EXPORTAR CSV do Token Loja</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão em 'Configurar Loja'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código da loja exemplo '1'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo com o código loja número '1', altero a quantidade do token para 'Randônico' tag pra 'INATIVO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro do código da loja exemplo '1'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido se o campo ficou inativo com o '1' da loja</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="155"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 15- Validar IMPORTAR CSV e EXPORTAR CSV da Configuração Desconto Subgrupo</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão subgrupo 'CONFIGURAR SUBGRUPO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do subgrupo '2'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo com o código '2', '1', '3', '2', 'Data Atual','0-REJEITADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do subgrupo '2'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem '1 Subgrupos importadas com sucesso!'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="165"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 15- Validar IMPORTAR CSV e EXPORTAR CSV da Configuração Desconto Subgrupo</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão subgrupo 'CONFIGURAR SUBGRUPO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do subgrupo '2'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo com o código '2', '1', '3', '2', 'Data Atual','1-INATIVO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do subgrupo '2'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem '1 Subgrupos importadas com sucesso!'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="175"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 15- Validar IMPORTAR CSV e EXPORTAR CSV da Configuração Desconto Subgrupo</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão subgrupo 'CONFIGURAR SUBGRUPO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do subgrupo '2'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo com o código '2', '1', '3', '2', 'Data Atual','2-ATIVO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do subgrupo '2'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem '1 Subgrupos importadas com sucesso!'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="185"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 16- Validar IMPORTAR CSV e EXPORTAR CSV do Desconto Produto Estado</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão Produto por Estado 'CONFIGURAR PRODUTO/ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do Desconto Produto Estado '209'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo através do código '209', '1', '3', '2', 'Data Atual', '0-REJEITADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem '1 Produtos importados com sucesso!'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="194"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 16- Validar IMPORTAR CSV e EXPORTAR CSV do Desconto Produto Estado</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão Produto por Estado 'CONFIGURAR PRODUTO/ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do Desconto Produto Estado '209'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo através do código '209', '1', '3', '2', 'Data Atual', '1-INATIVO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem '1 Produtos importados com sucesso!'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="203"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 16- Validar IMPORTAR CSV e EXPORTAR CSV do Desconto Produto Estado</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão Produto por Estado 'CONFIGURAR PRODUTO/ESTADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do Desconto Produto Estado '209'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo através do código '209', '1', '3', '2', 'Data Atual', '2-ATIVO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem '1 Produtos importados com sucesso!'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="212"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 17- Validar IMPORTAR CSV e EXPORTAR CSV do Desconto Produto Loja</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico em 'CONFIGURAR PRODUTO/LOJA'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do Desconto Produto Loja '10104615'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo do Produto Loja '10104615', '1', '3', '2', 'Data Atual', '0-REJEITADO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem '1 Produtos importados com sucesso!'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="221"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 17- Validar IMPORTAR CSV e EXPORTAR CSV do Desconto Produto Loja</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico em 'CONFIGURAR PRODUTO/LOJA'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do Desconto Produto Loja '10104615'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo do Produto Loja '10104615', '1', '3', '2', 'Data Atual', '1-INATIVO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem '1 Produtos importados com sucesso!'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="230"><span class="badge log pass-bg mr-2">Pass</span>Scenario: 17- Validar IMPORTAR CSV e EXPORTAR CSV do Desconto Produto Loja</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página monorepo 'http://fsj-monorepo-front-gestao-token-api.k3s.qas.farmaciassaojoao.com.br/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico em 'CONFIGURAR PRODUTO/LOJA'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o codigo do Desconto Produto Loja '10104615'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão 'EXPORTAR CSV' para exportar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When edito o arquivo do Produto Loja '10104615', '1', '3', '2', 'Data Atual', '2-ATIVO'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico no botão  'IMPORTAR CSV' para importar o arquivo</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido a seguinte mensagem '1 Produtos importados com sucesso!'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+  </div>
+           </div>
+        </li>
+        <li class="test-item" status="pass" test-id="239"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">PdvTokens</p>
+            <p class="text-sm">
+              <span>12:18:04</span> / <span>43744.05 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">PdvTokens</h5>
+                  <span class='badge badge-success'>02/18/2026 12:18:04</span>
+                  <span class='badge badge-danger'>02/18/2026 12:18:48</span>
+                  <span class='badge badge-default'>43744.05 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=239</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+  <div class="accordion mt-4">
+      <div class="card">
+        <div class="card-header" role="tab">
+          <div class="card-title">
+            <div class="node" id="240"><span class="badge log pass-bg mr-2">Pass</span>Scenario: Validar tokens</div>
+          </div>
+        </div>
+            <div class="collapse">
+              <div class="card-body">
+                
+
+                  <div class="step pass-bg" title="">
+                    <span>Given acesso na página pdv 'https://pdv.dev.farmaciassaojoao.com.br/fsj/'</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When inicio a sessão inserindo dados de login pdv</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When clico em Venda ou F10</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When insiro o código '39908' e clico no botao OK</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When informo o código do produto '141' e seleciono</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then valido o calculo de porcentagem, e seus niveis de descontos e alertas</span>
+                    
+    <div>
+PASSOU    </div>
+
+                    
+
+                  </div>
+              </div>
+            </div>
+      </div>
+  </div>
+           </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>02/18/2026 12:06:01</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>02/18/2026 12:18:48</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Features Passed</p>
+          <h3>1</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Features Failed</p>
+          <h3>1</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Features</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'>
+            <b>1</b> features passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>1</b> features failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Scenarios</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='child-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>23</b> scenarios passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>1</b> scenarios failed, 
+            <b>0</b> skipped, <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Steps</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='grandchild-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>219</b> Steps passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>1</b> steps failed, 
+            <b>0</b> skipped, <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "GestaoTokens":723212.9631,"PdvTokens":43744.0493 };
+  </script>
+  <div class="row">
+      <div class="col-md-4 sysenv-container">
+      <div class="card">
+        <div class="card-header"><p>System/Environment</p></div>
+        <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+          <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Machine</td>
+              <td>b81a91a5fc57</td>
+            </tr>
+            <tr>
+              <td>OS</td>
+              <td>Unix 5.15.0.163</td>
+            </tr>
+            <tr>
+              <td>User</td>
+              <td>root</td>
+            </tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 2,
+    childCount: 24,
+    grandChildCount: 220,
+    eventsCount: 220,
+
+passParent:1,failParent:1,warningParent:0,skipParent:0,    
+passChild:23,failChild:1,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:219,failGrandChild:1,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:219,failEvents:1,warningEvents:0,skipEvents:0,infoEvents:0,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>
